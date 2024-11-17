@@ -1,0 +1,24 @@
+.dark {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+.social-icon {
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+.social-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 148, 135, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+.social-icon:hover::after {
+    transform: scale(1.5);
+}

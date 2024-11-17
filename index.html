@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hridoy - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D9487',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar for desktop -->
+        <nav class="bg-primary text-white p-6 md:w-64 md:fixed md:h-full hidden md:block">
+            <div class="space-y-4">
+                <a href="#home" class="block hover:text-gray-300 transition-colors duration-300">Home</a>
+                <a href="#experience" class="block hover:text-gray-300 transition-colors duration-300">Experience</a>
+                <a href="#projects" class="block hover:text-gray-300 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="block hover:text-gray-300 transition-colors duration-300">Contact</a>
+            </div>
+            <button id="themeToggle" class="mt-6 bg-white text-primary px-4 py-2 rounded transition-colors duration-300 hover:bg-gray-200">Toggle Theme</button>
+        </nav>
+
+        <!-- Bottom navigation for mobile -->
+        <nav class="bg-primary text-white p-4 fixed w-full z-10 bottom-0 left-0 md:hidden">
+            <div class="flex justify-around">
+                <a href="#home" class="text-center transition-transform duration-300 hover:scale-110"><i class="fas fa-home"></i><br>Home</a>
+                <a href="#experience" class="text-center transition-transform duration-300 hover:scale-110"><i class="fas fa-briefcase"></i><br>Experience</a>
+                <a href="#projects" class="text-center transition-transform duration-300 hover:scale-110"><i class="fas fa-project-diagram"></i><br>Projects</a>
+                <a href="#contact" class="text-center transition-transform duration-300 hover:scale-110"><i class="fas fa-envelope"></i><br>Contact</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow md:ml-64 p-6 mb-16 md:mb-0">
+            <section id="home" class="min-h-screen flex items-center justify-center">
+                <div class="text-center" data-aos="fade-up">
+                    <img src="./assets/images/2889.jpg" alt="Hridoy" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover">
+                    <h1 class="text-4xl font-bold mb-2 text-primary">Hridoy</h1>
+                    <p class="text-xl mb-4 text-gray-600 dark:text-gray-400">Web Developer</p>
+                    <p class="max-w-md mx-auto text-gray-600 dark:text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quaerat id tempore nobis ex facilis itaque, assumenda tempora in? Neque odit eum tempora? Quae sapiente esse omnis laborum voluptatibus illum.</p>
+                    <div class="mt-6 flex justify-center space-x-6">
+                        <a href="#" class="social-icon relative inline-block text-primary hover:text-primary-dark">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-icon relative inline-block text-primary hover:text-primary-dark">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-icon relative inline-block text-primary hover:text-primary-dark">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-icon relative inline-block text-primary hover:text-primary-dark">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="min-h-screen py-16">
+                <h2 class="text-3xl font-bold mb-8 text-primary" data-aos="fade-right">Experience</h2>
+                <div class="space-y-8">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold">Senior Web Developer</h3>
+                        <p class="text-gray-600 dark:text-gray-400">TechCorp Inc. | 2018 - Present</p>
+                        <p class="mt-2">Led development of multiple web applications using React and Node.js.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold">Web Developer</h3>
+                        <p class="text-gray-600 dark:text-gray-400">WebSolutions Co. | 2015 - 2018</p>
+                        <p class="mt-2">Developed and maintained client websites using various web technologies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="min-h-screen py-16">
+                <h2 class="text-3xl font-bold mb-8 text-primary" data-aos="fade-right">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-xl font-semibold mb-2">Project</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-2">Tech Stack</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore porro blanditiis eius officiis ullam similique perferendis consequatur cupiditate incidunt.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="min-h-screen py-16">
+                <h2 class="text-3xl font-bold mb-8 text-primary" data-aos="fade-right">Get in Touch</h2>
+                <form class="max-w-md mx-auto" data-aos="fade-up">
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-primary dark:bg-gray-700 dark:border-gray-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" id="surname" name="surname" placeholder="Your Surname" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-primary dark:bg-gray-700 dark:border-gray-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-primary dark:bg-gray-700 dark:border-gray-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-primary dark:bg-gray-700 dark:border-gray-600" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition duration-300">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
